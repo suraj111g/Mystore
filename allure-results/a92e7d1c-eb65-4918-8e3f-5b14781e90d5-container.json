@@ -1,0 +1,1 @@
+{"uuid":"a92e7d1c-eb65-4918-8e3f-5b14781e90d5","name":"com.mystore.testcases.TC_MyAccountPageTest","children":["faaf0db8-e870-4830-b17b-2cba9553015f"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1666268577060,"stop":1666268603097}],"afters":[],"start":1666268577005,"stop":1666268614952}

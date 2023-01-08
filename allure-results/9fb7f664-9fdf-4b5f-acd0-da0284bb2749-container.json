@@ -1,0 +1,1 @@
+{"uuid":"9fb7f664-9fdf-4b5f-acd0-da0284bb2749","name":"com.mystore.testcases.TS02_LoginFunctionality","children":["86f88b26-1ab0-4cbc-a980-dadb41014598"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1672590935893,"stop":1672590941815}],"afters":[],"start":1672590935851,"stop":1672590945705}

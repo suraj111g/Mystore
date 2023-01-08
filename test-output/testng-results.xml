@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-08T17:08:06 IST" name="Suite" finished-at="2023-01-08T17:08:58 IST" duration-ms="52248">
+    <groups>
+    </groups>
+    <test started-at="2023-01-08T17:08:06 IST" name="Test" finished-at="2023-01-08T17:08:58 IST" duration-ms="52248">
+      <class name="com.mystore.testcases.TS02_LoginFunctionalityTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcases.TS02_LoginFunctionalityTest@4145bad8]" started-at="2023-01-08T17:08:26 IST" name="setup" finished-at="2023-01-08T17:08:29 IST" duration-ms="3321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginWithValidData()[pri:1, instance:com.mystore.testcases.TS02_LoginFunctionalityTest@4145bad8]" started-at="2023-01-08T17:08:29 IST" name="verifyLoginWithValidData" finished-at="2023-01-08T17:08:52 IST" duration-ms="23130" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='topic-block-title']//h2[text()='Welcome to our store']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='topic-block-title']//h2[text()='Welcome to our store']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.mystore.pageobject.LoginPage.getWelcomeMsg(LoginPage.java:57)
+at com.mystore.testcases.TS02_LoginFunctionalityTest.verifyLoginWithValidData(TS02_LoginFunctionalityTest.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='topic-block-title']//h2[text()='Welcome to our store']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-7R54CV9', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2621193630fad433c64ab820fe19e57d, findElement {using=xpath, value=//div[@class='topic-block-title']//h2[text()='Welcome to our store']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52454}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52454/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2621193630fad433c64ab820fe19e57d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidData -->
+        <test-method signature="verifyLoginWithInvalidData()[pri:2, instance:com.mystore.testcases.TS02_LoginFunctionalityTest@4145bad8]" started-at="2023-01-08T17:08:53 IST" name="verifyLoginWithInvalidData" finished-at="2023-01-08T17:08:54 IST" duration-ms="1412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidData -->
+        <test-method signature="verifyLoginWithInvalidDataWithValidEmailOnly()[pri:3, instance:com.mystore.testcases.TS02_LoginFunctionalityTest@4145bad8]" started-at="2023-01-08T17:08:54 IST" name="verifyLoginWithInvalidDataWithValidEmailOnly" finished-at="2023-01-08T17:08:56 IST" duration-ms="1432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidDataWithValidEmailOnly -->
+        <test-method signature="verifyLoginWithInvalidDataWithValidPasswordOnly()[pri:4, instance:com.mystore.testcases.TS02_LoginFunctionalityTest@4145bad8]" started-at="2023-01-08T17:08:56 IST" name="verifyLoginWithInvalidDataWithValidPasswordOnly" finished-at="2023-01-08T17:08:57 IST" duration-ms="1442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidDataWithValidPasswordOnly -->
+        <test-method signature="verifyLoginWithBlankDataInEmailField()[pri:5, instance:com.mystore.testcases.TS02_LoginFunctionalityTest@4145bad8]" started-at="2023-01-08T17:08:57 IST" name="verifyLoginWithBlankDataInEmailField" finished-at="2023-01-08T17:08:58 IST" duration-ms="796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithBlankDataInEmailField -->
+      </class> <!-- com.mystore.testcases.TS02_LoginFunctionalityTest -->
+      <class name="com.mystore.testcases.TS01_RegistrationFunctionalityTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcases.TS01_RegistrationFunctionalityTest@63376bed]" started-at="2023-01-08T17:08:06 IST" name="setup" finished-at="2023-01-08T17:08:11 IST" duration-ms="5689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserRegistration()[pri:0, instance:com.mystore.testcases.TS01_RegistrationFunctionalityTest@63376bed]" started-at="2023-01-08T17:08:11 IST" name="verifyUserRegistration" finished-at="2023-01-08T17:08:16 IST" duration-ms="4642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserRegistration -->
+        <test-method signature="verifyFirstnameWithBlankData()[pri:1, instance:com.mystore.testcases.TS01_RegistrationFunctionalityTest@63376bed]" started-at="2023-01-08T17:08:16 IST" name="verifyFirstnameWithBlankData" finished-at="2023-01-08T17:08:18 IST" duration-ms="2003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstnameWithBlankData -->
+        <test-method signature="verifylastnameWithBlankData()[pri:2, instance:com.mystore.testcases.TS01_RegistrationFunctionalityTest@63376bed]" started-at="2023-01-08T17:08:18 IST" name="verifylastnameWithBlankData" finished-at="2023-01-08T17:08:20 IST" duration-ms="1900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylastnameWithBlankData -->
+        <test-method signature="verifyEmailWithBlankData()[pri:3, instance:com.mystore.testcases.TS01_RegistrationFunctionalityTest@63376bed]" started-at="2023-01-08T17:08:20 IST" name="verifyEmailWithBlankData" finished-at="2023-01-08T17:08:22 IST" duration-ms="1871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailWithBlankData -->
+        <test-method signature="verifyPasswordWithBlankData()[pri:4, instance:com.mystore.testcases.TS01_RegistrationFunctionalityTest@63376bed]" started-at="2023-01-08T17:08:22 IST" name="verifyPasswordWithBlankData" finished-at="2023-01-08T17:08:24 IST" duration-ms="1931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordWithBlankData -->
+        <test-method signature="verifyConfirmPasswordWithBlankData()[pri:5, instance:com.mystore.testcases.TS01_RegistrationFunctionalityTest@63376bed]" started-at="2023-01-08T17:08:24 IST" name="verifyConfirmPasswordWithBlankData" finished-at="2023-01-08T17:08:26 IST" duration-ms="2001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyConfirmPasswordWithBlankData -->
+      </class> <!-- com.mystore.testcases.TS01_RegistrationFunctionalityTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

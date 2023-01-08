@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">52,248</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.mystore.testcases.TS02_LoginFunctionalityTest</td><td><a href="#m0">verifyLoginWithValidData</a></td><td rowspan="1">1673177909621</td><td rowspan="1">23130</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.mystore.testcases.TS01_RegistrationFunctionalityTest</td><td><a href="#m1">verifyConfirmPasswordWithBlankData</a></td><td rowspan="1">1673177904292</td><td rowspan="1">2001</td></tr><tr class="passedeven"><td><a href="#m2">verifyEmailWithBlankData</a></td><td rowspan="1">1673177900481</td><td rowspan="1">1871</td></tr><tr class="passedeven"><td><a href="#m3">verifyFirstnameWithBlankData</a></td><td rowspan="1">1673177896563</td><td rowspan="1">2003</td></tr><tr class="passedeven"><td><a href="#m4">verifyPasswordWithBlankData</a></td><td rowspan="1">1673177902358</td><td rowspan="1">1931</td></tr><tr class="passedeven"><td><a href="#m5">verifyUserRegistration</a></td><td rowspan="1">1673177891798</td><td rowspan="1">4642</td></tr><tr class="passedeven"><td><a href="#m6">verifylastnameWithBlankData</a></td><td rowspan="1">1673177898576</td><td rowspan="1">1900</td></tr><tr class="passedodd"><td rowspan="4">com.mystore.testcases.TS02_LoginFunctionalityTest</td><td><a href="#m7">verifyLoginWithBlankDataInEmailField</a></td><td rowspan="1">1673177937480</td><td rowspan="1">796</td></tr><tr class="passedodd"><td><a href="#m8">verifyLoginWithInvalidData</a></td><td rowspan="1">1673177933182</td><td rowspan="1">1412</td></tr><tr class="passedodd"><td><a href="#m9">verifyLoginWithInvalidDataWithValidEmailOnly</a></td><td rowspan="1">1673177934599</td><td rowspan="1">1432</td></tr><tr class="passedodd"><td><a href="#m10">verifyLoginWithInvalidDataWithValidPasswordOnly</a></td><td rowspan="1">1673177936035</td><td rowspan="1">1442</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.mystore.testcases.TS02_LoginFunctionalityTest#verifyLoginWithValidData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;topic-block-title&apos;]//h2[text()=&apos;Welcome to our store&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.mystore.pageobject.LoginPage.getWelcomeMsg(LoginPage.java:57)
+	at com.mystore.testcases.TS02_LoginFunctionalityTest.verifyLoginWithValidData(TS02_LoginFunctionalityTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;topic-block-title&apos;]//h2[text()=&apos;Welcome to our store&apos;]&quot;}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-7R54CV9&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2621193630fad433c64ab820fe19e57d, findElement {using=xpath, value=//div[@class=&apos;topic-block-title&apos;]//h2[text()=&apos;Welcome to our store&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52454}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52454/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2621193630fad433c64ab820fe19e57d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 28 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.mystore.testcases.TS01_RegistrationFunctionalityTest#verifyConfirmPasswordWithBlankData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.mystore.testcases.TS01_RegistrationFunctionalityTest#verifyEmailWithBlankData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.mystore.testcases.TS01_RegistrationFunctionalityTest#verifyFirstnameWithBlankData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.mystore.testcases.TS01_RegistrationFunctionalityTest#verifyPasswordWithBlankData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.mystore.testcases.TS01_RegistrationFunctionalityTest#verifyUserRegistration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.mystore.testcases.TS01_RegistrationFunctionalityTest#verifylastnameWithBlankData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.mystore.testcases.TS02_LoginFunctionalityTest#verifyLoginWithBlankDataInEmailField</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.mystore.testcases.TS02_LoginFunctionalityTest#verifyLoginWithInvalidData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.mystore.testcases.TS02_LoginFunctionalityTest#verifyLoginWithInvalidDataWithValidEmailOnly</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.mystore.testcases.TS02_LoginFunctionalityTest#verifyLoginWithInvalidDataWithValidPasswordOnly</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

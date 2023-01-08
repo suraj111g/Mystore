@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.mystore.utilities.ItestListnerClass" />
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="com.mystore.testcases.TS01_RegistrationFunctionalityTest">
+				<methods>
+					<include name="verifyUserRegistration" />
+					<include name="verifyFirstnameWithBlankData" />
+					<include name="verifylastnameWithBlankData" />
+					<include name="verifyEmailWithBlankData" />
+					<include name="verifyPasswordWithBlankData" />
+					<include name="verifyConfirmPasswordWithBlankData" />
+				</methods>
+			</class>
+			
+			<class name="com.mystore.testcases.TS02_LoginFunctionalityTest">
+				<methods>
+					<include name="verifyLoginWithValidData" />
+					<include name="verifyLoginWithInvalidData" />
+					<include name="verifyLoginWithInvalidDataWithValidEmailOnly" />
+					<include name="verifyLoginWithInvalidDataWithValidPasswordOnly" />
+					<include name="verifyLoginWithBlankDataInEmailField" />
+				</methods>
+			</class>
+					
+		</classes>
+	</test>
+</suite>
